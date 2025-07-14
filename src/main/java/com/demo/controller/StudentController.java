@@ -49,4 +49,9 @@ public class StudentController {
 	public String getGit2() {
 		return "Kishore's Student 2 GitHub";
 	}
+	
+	@GetMapping(value = "/Hello Student 3 Git-Hub")
+	public String getGit3() {
+		return "Kishore's Student 3 GitHub";
+	}
 }
