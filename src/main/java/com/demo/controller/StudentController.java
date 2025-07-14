@@ -39,4 +39,14 @@ public class StudentController {
     public List<StudentEntity> GetStudentDetailsByAge(@PathVariable int a) throws AgeNotFoundException {
         return ss.GetStudentDetailsByAge(a);
     }
+	
+	@GetMapping(value = "/Hello Student Git-Hub")
+	public String getGit() {
+		return "Kishore's Student GitHub";
+	}
+	
+	@GetMapping(value = "/Hello Student 2 Git-Hub")
+	public String getGit2() {
+		return "Kishore's Student 2 GitHub";
+	}
 }
